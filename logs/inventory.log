@@ -1,0 +1,206 @@
+13:05:38.078 INFO  Starting InventoryServiceApplication using Java 17.0.5 on DESKTOP-2ST2GIE with PID 7784 (C:\Users\LENOVO\Desktop\microservices2023\inventory-service\target\classes started by LENOVO in C:\Users\LENOVO\Desktop\microservices2023)
+13:05:38.082 INFO  No active profile set, falling back to 1 default profile: "default"
+13:05:38.924 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13:05:39.060 INFO  Finished Spring Data repository scanning in 127 ms. Found 1 JPA repository interfaces.
+13:05:39.559 INFO  BeanFactory id=c1efc640-7f7f-3b6d-8635-673d35ff311c
+13:05:40.420 INFO  Tomcat initialized with port(s): 0 (http)
+13:05:40.443 INFO  Initializing ProtocolHandler ["http-nio-auto-1"]
+13:05:40.444 INFO  Starting service [Tomcat]
+13:05:40.444 INFO  Starting Servlet engine: [Apache Tomcat/9.0.71]
+13:05:40.630 INFO  Initializing Spring embedded WebApplicationContext
+13:05:40.631 INFO  Root WebApplicationContext: initialization completed in 2502 ms
+13:05:41.483 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+13:05:41.537 INFO  HHH000412: Hibernate ORM core version 5.6.14.Final
+13:05:41.701 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+13:05:41.831 INFO  HikariPool-1 - Starting...
+13:05:42.021 INFO  HikariPool-1 - Start completed.
+13:05:42.054 INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+13:05:42.681 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+13:05:42.689 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+13:05:43.359 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13:05:45.390 INFO  Cannot determine local hostname
+13:05:45.464 INFO  Eureka HTTP Client uses RestTemplate.
+13:05:47.042 INFO  Cannot determine local hostname
+13:05:47.639 WARN  Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+13:05:47.713 INFO  Starting ProtocolHandler ["http-nio-auto-1"]
+13:05:47.741 INFO  Tomcat started on port(s): 3534 (http) with context path ''
+13:05:47.743 INFO  Updating port to 3534
+13:05:47.749 INFO  Setting initial instance status as: STARTING
+13:05:47.847 INFO  Initializing Eureka in region us-east-1
+13:05:47.853 INFO  Resolving eureka endpoints via configuration
+13:05:47.881 INFO  Disable delta property : false
+13:05:47.881 INFO  Single vip registry refresh property : null
+13:05:47.881 INFO  Force full registry fetch : false
+13:05:47.881 INFO  Application is null : false
+13:05:47.881 INFO  Registered Applications size is zero : true
+13:05:47.881 INFO  Application version is -1: true
+13:05:47.881 INFO  Getting all instance registry info from the eureka server
+13:05:48.321 INFO  The response status is 200
+13:05:48.326 INFO  Starting heartbeat executor: renew interval is: 30
+13:05:48.331 INFO  InstanceInfoReplicator onDemand update allowed rate per min is 4
+13:05:48.337 INFO  Discovery Client initialized at timestamp 1676196348335 with initial instances count: 1
+13:05:48.350 INFO  Registering application INVENTORY-SERVICE with eureka with status UP
+13:05:48.351 INFO  Saw local status change event StatusChangeEvent [timestamp=1676196348351, current=UP, previous=STARTING]
+13:05:48.354 INFO  DiscoveryClient_INVENTORY-SERVICE/localhost:inventory-service:0: registering service...
+13:05:48.404 INFO  DiscoveryClient_INVENTORY-SERVICE/localhost:inventory-service:0 - registration status: 204
+13:05:49.733 INFO  Cannot determine local hostname
+13:05:49.752 INFO  Started InventoryServiceApplication in 13.958 seconds (JVM running for 14.535)
+13:10:47.886 INFO  Resolving eureka endpoints via configuration
+13:15:47.892 INFO  Resolving eureka endpoints via configuration
+13:20:47.905 INFO  Resolving eureka endpoints via configuration
+13:21:32.029 INFO  Flushing remaining spans on shutdown
+13:21:32.030 INFO  Unregistering application INVENTORY-SERVICE with eureka with status DOWN
+13:21:32.031 INFO  Saw local status change event StatusChangeEvent [timestamp=1676197292031, current=DOWN, previous=UP]
+13:21:32.031 INFO  DiscoveryClient_INVENTORY-SERVICE/localhost:inventory-service:0: registering service...
+13:21:32.051 INFO  Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://eureka:password@localhost:8761/eureka/} exception=I/O error on POST request for "http://eureka:password@localhost:8761/eureka/apps/INVENTORY-SERVICE": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://eureka:password@localhost:8761/eureka/apps/INVENTORY-SERVICE": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:791)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:608)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:109)
+	at org.springframework.http.client.support.BasicAuthenticationInterceptor.intercept(BasicAuthenticationInterceptor.java:79)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:93)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:77)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:782)
+	... 21 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 40 more
+
+13:21:32.051 WARN  Request execution failed with message: I/O error on POST request for "http://eureka:password@localhost:8761/eureka/apps/INVENTORY-SERVICE": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+13:21:32.061 INFO  Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://eureka:password@localhost:8761/eureka/}, exception=I/O error on POST request for "http://eureka:password@localhost:8761/eureka/apps/INVENTORY-SERVICE": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://eureka:password@localhost:8761/eureka/apps/INVENTORY-SERVICE": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:791)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:608)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:109)
+	at org.springframework.http.client.support.BasicAuthenticationInterceptor.intercept(BasicAuthenticationInterceptor.java:79)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:93)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:77)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:782)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 41 more
+
+13:21:32.061 WARN  Request execution failed with message: I/O error on POST request for "http://eureka:password@localhost:8761/eureka/apps/INVENTORY-SERVICE": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+13:21:32.063 WARN  DiscoveryClient_INVENTORY-SERVICE/localhost:inventory-service:0 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+13:21:32.064 WARN  There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+13:21:32.072 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+13:21:32.073 INFO  HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+13:21:32.084 INFO  HikariPool-1 - Shutdown initiated...
+13:21:32.095 INFO  HikariPool-1 - Shutdown completed.
+13:21:33.104 INFO  Shutting down DiscoveryClient ...

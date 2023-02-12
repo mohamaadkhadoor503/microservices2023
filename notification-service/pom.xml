@@ -43,7 +43,11 @@
 			<artifactId>spring-cloud-starter-feign</artifactId>
 			<version>1.4.7.RELEASE</version>
 		</dependency>
-
+		<dependency>
+			<groupId>net.logstash.logback</groupId>
+			<artifactId>logstash-logback-encoder</artifactId>
+			<version>7.2</version>
+		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>

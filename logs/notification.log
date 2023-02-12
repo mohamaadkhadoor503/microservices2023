@@ -1,0 +1,156 @@
+13:05:56.731 INFO  HV000001: Hibernate Validator 6.2.5.Final
+13:05:56.764 INFO  Starting NotificationServiceApplication using Java 17.0.5 on DESKTOP-2ST2GIE with PID 24052 (C:\Users\LENOVO\Desktop\microservices2023\notification-service\target\classes started by LENOVO in C:\Users\LENOVO\Desktop\microservices2023)
+13:05:56.767 INFO  No active profile set, falling back to 1 default profile: "default"
+13:05:58.370 INFO  No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+13:05:58.388 INFO  No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+13:05:58.515 INFO  BeanFactory id=d92f011b-da9b-35ac-951f-5718aebf66e4
+13:06:01.043 INFO  Cannot determine local hostname
+13:06:01.111 INFO  Eureka HTTP Client uses RestTemplate.
+13:06:02.720 INFO  Cannot determine local hostname
+13:06:02.889 WARN  Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+13:06:03.210 INFO  Channel 'notification-service.springCloudBusInput' has 1 subscriber(s).
+13:06:03.565 INFO  Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+13:06:03.566 INFO  Channel 'notification-service.errorChannel' has 1 subscriber(s).
+13:06:03.567 INFO  started bean '_org.springframework.integration.errorLogger'
+13:06:03.916 INFO  Attempting to connect to: [localhost:5672]
+13:06:13.862 INFO  Channel 'notification-service.notificationEventSupplier-out-0' has 1 subscriber(s).
+13:06:13.936 INFO  declaring queue for inbound: springCloudBus.anonymous.jrqLsRnpR_WE_tUmnB7vOA, bound to: springCloudBus
+13:06:13.936 INFO  Attempting to connect to: [localhost:5672]
+13:06:23.866 INFO  Attempting to connect to: [localhost:5672]
+13:06:33.841 WARN  An unexpected connection driver error occurred (Exception message: Socket closed)
+13:06:33.845 INFO  Attempting to connect to: [localhost:5672]
+13:06:43.859 INFO  Channel 'springCloudBus.anonymous.jrqLsRnpR_WE_tUmnB7vOA.errors' has 1 subscriber(s).
+13:06:43.860 INFO  Channel 'springCloudBus.anonymous.jrqLsRnpR_WE_tUmnB7vOA.errors' has 2 subscriber(s).
+13:06:43.862 INFO  Attempting to connect to: [localhost:5672]
+13:06:53.778 INFO  Broker not available; cannot force queue declarations during start: java.io.IOException
+13:06:53.796 INFO  Attempting to connect to: [localhost:5672]
+13:07:03.717 INFO  started bean 'inbound.springCloudBus.anonymous.jrqLsRnpR_WE_tUmnB7vOA'
+13:07:03.746 INFO  Started NotificationServiceApplication in 69.509 seconds (JVM running for 70.254)
+13:07:08.859 INFO  Restarting Consumer@da09250: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:07:08.862 INFO  Attempting to connect to: [localhost:5672]
+13:07:23.891 INFO  Restarting Consumer@1d79d8d4: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:07:23.892 INFO  Attempting to connect to: [localhost:5672]
+13:07:38.908 INFO  Restarting Consumer@43917232: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:07:38.909 INFO  Attempting to connect to: [localhost:5672]
+13:07:53.934 INFO  Restarting Consumer@2b964a0: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:07:53.935 INFO  Attempting to connect to: [localhost:5672]
+13:08:08.968 INFO  Restarting Consumer@41da5f82: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:08:08.969 INFO  Attempting to connect to: [localhost:5672]
+13:08:18.930 WARN  An unexpected connection driver error occurred (Exception message: Socket closed)
+13:08:24.012 INFO  Restarting Consumer@17e940b8: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:08:24.014 INFO  Attempting to connect to: [localhost:5672]
+13:08:39.020 INFO  Restarting Consumer@6be32472: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:08:39.021 INFO  Attempting to connect to: [localhost:5672]
+13:08:54.060 INFO  Restarting Consumer@9d77b8a: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:08:54.061 INFO  Attempting to connect to: [localhost:5672]
+13:09:09.105 INFO  Restarting Consumer@74dadeec: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:09:09.106 INFO  Attempting to connect to: [localhost:5672]
+13:09:24.154 INFO  Restarting Consumer@1646003: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:09:24.155 INFO  Attempting to connect to: [localhost:5672]
+13:09:39.226 INFO  Restarting Consumer@4071d545: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:09:39.228 INFO  Attempting to connect to: [localhost:5672]
+13:09:54.235 INFO  Restarting Consumer@1dc16fcc: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:09:54.236 INFO  Attempting to connect to: [localhost:5672]
+13:10:04.200 WARN  An unexpected connection driver error occurred (Exception message: Socket closed)
+13:10:09.272 INFO  Restarting Consumer@3a35d472: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:10:09.273 INFO  Attempting to connect to: [localhost:5672]
+13:10:24.307 INFO  Restarting Consumer@702fa413: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:10:24.308 INFO  Attempting to connect to: [localhost:5672]
+13:10:39.335 INFO  Restarting Consumer@19d63ee2: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:10:39.336 INFO  Attempting to connect to: [localhost:5672]
+13:10:54.355 INFO  Restarting Consumer@31e9627e: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:10:54.355 INFO  Attempting to connect to: [localhost:5672]
+13:11:09.377 INFO  Restarting Consumer@42772019: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:11:09.378 INFO  Attempting to connect to: [localhost:5672]
+13:11:24.414 INFO  Restarting Consumer@5e788691: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:11:24.415 INFO  Attempting to connect to: [localhost:5672]
+13:11:39.441 INFO  Restarting Consumer@541d306f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:11:39.442 INFO  Attempting to connect to: [localhost:5672]
+13:11:54.470 INFO  Restarting Consumer@549b887: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:11:54.471 INFO  Attempting to connect to: [localhost:5672]
+13:12:09.496 INFO  Restarting Consumer@771d133e: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:12:09.497 INFO  Attempting to connect to: [localhost:5672]
+13:12:24.503 INFO  Restarting Consumer@7aa33039: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:12:24.503 INFO  Attempting to connect to: [localhost:5672]
+13:12:39.572 INFO  Restarting Consumer@6dc08ba4: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:12:39.573 INFO  Attempting to connect to: [localhost:5672]
+13:12:54.600 INFO  Restarting Consumer@7cd8893d: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:12:54.601 INFO  Attempting to connect to: [localhost:5672]
+13:13:09.669 INFO  Restarting Consumer@68d51c6b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:13:09.670 INFO  Attempting to connect to: [localhost:5672]
+13:13:24.690 INFO  Restarting Consumer@4b6ab8c2: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:13:24.691 INFO  Attempting to connect to: [localhost:5672]
+13:13:39.719 INFO  Restarting Consumer@eef3d5b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:13:39.720 INFO  Attempting to connect to: [localhost:5672]
+13:13:54.767 INFO  Restarting Consumer@116e6223: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:13:54.767 INFO  Attempting to connect to: [localhost:5672]
+13:14:09.801 INFO  Restarting Consumer@7e1e8215: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:14:09.804 INFO  Attempting to connect to: [localhost:5672]
+13:14:24.869 INFO  Restarting Consumer@17f07fc7: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:14:24.869 INFO  Attempting to connect to: [localhost:5672]
+13:14:39.927 INFO  Restarting Consumer@b1f6e2: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:14:39.928 INFO  Attempting to connect to: [localhost:5672]
+13:14:54.918 INFO  Restarting Consumer@23f52a39: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:14:54.922 INFO  Attempting to connect to: [localhost:5672]
+13:15:09.980 INFO  Restarting Consumer@4b94f8b5: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:15:09.980 INFO  Attempting to connect to: [localhost:5672]
+13:15:25.023 INFO  Restarting Consumer@55edf831: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:15:25.024 INFO  Attempting to connect to: [localhost:5672]
+13:15:40.043 INFO  Restarting Consumer@45bb71dc: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:15:40.044 INFO  Attempting to connect to: [localhost:5672]
+13:15:55.042 INFO  Restarting Consumer@f0ad2ea: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:15:55.042 INFO  Attempting to connect to: [localhost:5672]
+13:16:05.009 WARN  An unexpected connection driver error occurred (Exception message: Socket closed)
+13:16:10.077 INFO  Restarting Consumer@3781904f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:16:10.078 INFO  Attempting to connect to: [localhost:5672]
+13:16:25.095 INFO  Restarting Consumer@60eee9e5: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:16:25.096 INFO  Attempting to connect to: [localhost:5672]
+13:16:40.102 INFO  Restarting Consumer@6593dfcb: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:16:40.103 INFO  Attempting to connect to: [localhost:5672]
+13:16:55.126 INFO  Restarting Consumer@3e574cf7: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:16:55.126 INFO  Attempting to connect to: [localhost:5672]
+13:17:10.124 INFO  Restarting Consumer@4d442f57: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:17:10.125 INFO  Attempting to connect to: [localhost:5672]
+13:17:25.132 INFO  Restarting Consumer@208fbd31: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:17:25.134 INFO  Attempting to connect to: [localhost:5672]
+13:17:40.145 INFO  Restarting Consumer@1cc01615: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:17:40.147 INFO  Attempting to connect to: [localhost:5672]
+13:17:55.147 INFO  Restarting Consumer@70b885df: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:17:55.149 INFO  Attempting to connect to: [localhost:5672]
+13:18:10.251 INFO  Restarting Consumer@4a2d4b5c: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:18:10.253 INFO  Attempting to connect to: [localhost:5672]
+13:18:25.300 INFO  Restarting Consumer@6962bb83: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:18:25.302 INFO  Attempting to connect to: [localhost:5672]
+13:18:40.368 INFO  Restarting Consumer@28a63ca: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:18:40.369 INFO  Attempting to connect to: [localhost:5672]
+13:18:55.402 INFO  Restarting Consumer@123f380c: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:18:55.403 INFO  Attempting to connect to: [localhost:5672]
+13:19:10.429 INFO  Restarting Consumer@41f0ef87: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:19:10.430 INFO  Attempting to connect to: [localhost:5672]
+13:19:25.437 INFO  Restarting Consumer@6318e51c: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:19:25.440 INFO  Attempting to connect to: [localhost:5672]
+13:19:40.480 INFO  Restarting Consumer@51b861b4: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:19:40.483 INFO  Attempting to connect to: [localhost:5672]
+13:19:55.539 INFO  Restarting Consumer@4c4276d0: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:19:55.540 INFO  Attempting to connect to: [localhost:5672]
+13:20:10.549 INFO  Restarting Consumer@1302d6ea: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:20:10.551 INFO  Attempting to connect to: [localhost:5672]
+13:20:25.561 INFO  Restarting Consumer@32b7b305: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:20:25.562 INFO  Attempting to connect to: [localhost:5672]
+13:20:40.550 INFO  Restarting Consumer@145ab458: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:20:40.551 INFO  Attempting to connect to: [localhost:5672]
+13:20:55.592 INFO  Restarting Consumer@1832064f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:20:55.592 INFO  Attempting to connect to: [localhost:5672]
+13:21:10.604 INFO  Restarting Consumer@604b2c94: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:21:10.605 INFO  Attempting to connect to: [localhost:5672]
+13:21:25.599 INFO  Restarting Consumer@7ce0cc3f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:21:25.600 INFO  Attempting to connect to: [localhost:5672]
+13:21:38.440 INFO  Setting initial instance status as: STARTING
+13:21:38.441 INFO  Unregistering application NOTIFICATION-SERVICE with eureka with status DOWN
+13:21:38.443 INFO  Waiting for workers to finish.
+13:21:38.444 INFO  Successfully waited for workers to finish.
+13:21:38.444 INFO  stopped bean 'inbound.springCloudBus.anonymous.jrqLsRnpR_WE_tUmnB7vOA'
+13:21:38.450 INFO  Channel 'notification-service.springCloudBus.anonymous.jrqLsRnpR_WE_tUmnB7vOA.errors' has 1 subscriber(s).
+13:21:38.452 INFO  Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+13:21:38.453 INFO  Channel 'notification-service.errorChannel' has 0 subscriber(s).
+13:21:38.454 INFO  stopped bean '_org.springframework.integration.errorLogger'
